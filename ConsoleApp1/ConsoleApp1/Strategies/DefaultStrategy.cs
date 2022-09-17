@@ -5,8 +5,7 @@
     {
         public void Execute(params object[] input)
         {
-            if (input == null) return;
-            var name = input.FirstOrDefault(i => i as string != null) ?? "<unset>";
+            var name = input?.FirstOrDefault(i => i as string != null) ?? "<unset>";
             Console.WriteLine($"foo {name} bar {name} baz");
         }
     }
