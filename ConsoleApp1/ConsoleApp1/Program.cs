@@ -7,7 +7,7 @@ StrategyFinder.For("Hello_End")?.Execute("hadmacker");            // "Hello hadm
 
 // Handling different input parameters from above
 StrategyFinder.For("CustomInput")?.Execute(new Object[] {1, 2} ); // "1+2=3"
-StrategyFinder.For("CustomInput")?.Execute(new Object[] { 2 });   // "2+0=2"
+StrategyFinder.For("CustomInput")?.Execute(new Object[] { 2 });   // "2+2=4"
 StrategyFinder.For("CustomInput")?.Execute(new Object[] { });     // "0+0=0"
 StrategyFinder.For("CustomInput")?.Execute(null);                 // "No mathable input"
 
